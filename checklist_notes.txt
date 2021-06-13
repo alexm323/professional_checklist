@@ -1,0 +1,35 @@
+1. Crafting your story:
+ I thought my job as a Dealer was secure until the casinos in Los Angeles closed down due to the pandemic. I swore that day that I would never be in that position again and so I began my foray intro programming. I'm a member of the 100Devs team and a graduate of the Springboard Software Engineering Course. I am passionate about learning and building my skills and am currently learning about React Native and working on my first mobile app.
+
+2. Online Persona 
+Twitter talk about yourself positively 
+Don't be humble during the hunt 
+Have a professional headshot 
+remove.bg - removes the background 
+make sure your title says software engineer at 100devs 
+Follow 50 engineers in your hometown 
+Automate content with Buffer which is an autoposting tool 
+like and interact with people that you follow 
+
+LinkedIn and AngelList 
+
+Make sure location and contact info is up to date on linkedIn 
+
+example Andy 
+https://www.linkedin.com/in/andy-vasquez-dev
+
+Join #100DevsGroup 
+Find 5 individuals, endorse them for JS, Node, React 
+
+host on netlify if you want a thing with your name on it 
+
+use cvcompiler to make sure your resume is good 
+
+make a different landing page for each job that you are applying to from your hitlist 
+.../portfolio/amazon 
+hey amazon these are my skills that make me standout for this specific position boom boom boom 
+
+
+cover letter use and change the template 
+
+Github profile generator 
