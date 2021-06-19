@@ -4,11 +4,22 @@ Resources with most answers at the end.
 Behavioral Questions
 
 1. Give me an example of the project or initiative that you started on your own. It can be a non-business one. What prompted you to get started?
+   I created a project using Python-Flask for the backend, Jinja2 for a templating language, javascript and postgresql. The aim of the project was to create a more streamlined food tracker using an external API and it was something I was interested in because I have always been on the heavier side and I needed something that would help me track my caloric intake and give me a breakdown of the nutritional values of the food I was eating while I was using it. I was tired of dealing with all of the ads in myfitnesspal , so carbe-diem was born.
 
 2. Tell me about a time you had to work on several projects at once. How did you handle this?
+
+   I like to map out my time and break things down by priority before commencing with tasks. While I was going through my coding bootcamp I was also taking a full courseload in college. I mapped out sepecific amounts of time to do each class each week so that the work didn't compound. While I was working through my coding bootcamp and learning React and Express I had multiple projects for both school so the best thing to me was to map out what needed to get done and I would time box projects so I could complete tasks before the deadlines hit.
+
 3. Describe a situation in which you felt you had not communicated well enough. What did you do? How did you handle it?
+
+   I
+
 4. Tell me about when you had to deal with conflict within your team. How was the conflict solved? How did you handle that? How would you deal with it now?
+
 5. Give me an example of a time you had to take a creative and unusual approach to solve coding problem. How did this idea come to your mind? Why do you think it was unusual?
+
+   I had a particular problem when i was working on my first fullstack app carbe-diem. I was running into issues with the rate limits for making api calls and that made it difficult to be able to keep grabbing data for users each time they needed a certain request made. Instead of making an api call each time, I set it up in a way so that when an item was called the database would grab the nearest 20 items that came from that api call and it would store into my database. Next time a user needed to add a particular item , if it already existed based off of a keyword I would have them request from my database rather than requesting from the api, thereby saving me an api call and I thought that was pretty clever and I was proud of that solution.
+
 6. Describe a situation in which you worked diligently on a project and it did not produce the desired results. Why didn't you get the desired results? What did you learn from the experience?
 7. Give an example of an important project goal you reached and how you achieved it.
 8. Describe a situation in which you experienced difficulty in getting others to accept your ideas? What was your approach? How did this work? Were you able to successfully persuade someone to see things your way
