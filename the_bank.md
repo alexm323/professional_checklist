@@ -32,6 +32,12 @@ Behavioral Questions
 15. What do you know about our company?
 16. Why do you want to work for us?
 17. Why are you interested in this opportunity?
+
+"TechEmpower Example"
+My name is Alejandro and when the pandemic hit I was laid off from my job as a casino dealer and left to wonder what my future would look like. I felt trapped realizing that my skills were only as good as the environment that facilitated me, in my case the casino provided me a place to work and I was dependent on them . I had always been interested in technology after years of studying engineering so I decided to make the switch to software engineering as a way to gain skills that I could use to be gainfully employed and provide for my family. I committed to a bootcamp that I have been working through during the pandemic and that gave me the opportunity to learn about various technologies and help keep me accountable for my own learning as I make this transition. I have learned JavaScript and Python, different back end technologies like Node.js and Flask. I am currently learning and working with React-Native after learning some React and I have tried a variety of CSS frameworks like Bootstrap, Bulma , and Tailwind.
+
+     I love to learn especially learning about new technologies and TechEmpower seems like the perfect place to start a career that allows me to learn and grow. I love the ability to work in small teams and being able to focus on a few different projects throughout the year seems like a great way to expand and grow my skillset as we build out products. I feel that my goals for my career are a great match for the kinds of employees that TechEmpower tries to hire.
+
 18. Tell me about your dream job? What do you really want to do with your career?
 19. Tell me a time when you failed.
 20. What do you read on a regular basis?
