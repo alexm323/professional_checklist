@@ -227,3 +227,23 @@ https://github.com/yangshun/front-end-interview-handbook
 https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
 https://www.simplilearn.com/node-js-interview-questions-and-answers-article
 https://medium.com/@vigowebs/frequently-asked-node-js-interview-questions-and-answers-b74fa1f20678
+
+Stuff to ask potential networks
+
+1. How did you get your foot in the door at \_?
+2. What education, experience, or training do you find the most useful in your current role? (i.e. did the stuff you learned in college/self-taught help you most or job experience over time)
+3. How does your job affect your general lifestyle?
+4. What are the typical challenges you face in the tech industry?
+5. Do employers care if you don’t have a degree in CS?
+6. As a \_\_, what steps would you recommend I take to prepare to enter this field?
+7. What tips can you give to make someone stand out, especially in competitive places?
+8. Looking back at your careers so far, are there things you wish you would have done differently?
+9. Can you suggest a few names of people I could contact for additional info?
+10. What is a project you’re excited about working on?
+11. What is one thing that you have always wanted to try but never have?
+12. What is something that you have always wanted to learn?
+13. What has been the highlight of your year so far?
+14. “How did you land your first job?”
+15. “What’s your current company like, and what’s your role there?”
+16. “How will I know when I’m ready to start looking for a job?”
+17. “After hearing about what I'm up to, do you know anybody who you think I should meet?”
