@@ -1,19 +1,328 @@
 /**
  * ARRAY WORK
  * Please research the following methods:
+ * 
+___________________________________________________________
 map
+creates a new array populated with the results of calling a function on every element in the calling array 
+
+syntax 
+map((element, index, array) => { ... } )
+
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+
+when to not use map:
+1. You are not using the returned array, use forEach() or for...of instead 
+2. youre not returning a value from the callback 
+
+
+___________________________________________________________
+___________________________________________________________
 reduce
+
+executes a reducer function that you provide on each element of the array and the return value is a single output value based on that reducer 
+
+Syntax 
+
+reduce((accumulator, currentValue, index, array) => { ... }, initialValue)
+
+
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+___________________________________________________________
+___________________________________________________________
 filter
+
+Syntax
+filter((element, index, array) => { ... } )
+
+creates a new array with all elements that pass the test implemented by the provided function 
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+
+______________________________________________________________________________________________________________________
+
 forEach
+
+executes a provided function once for each array element\
+syntax
+
+forEach((element, index, array) => { ... } )
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+
+does not mutate the original array and always returns undefined 
+cannot be chained and should be used to execute side effects at the end of a chain 
+
+forEach does not wait for promises 
+
+______________________________________________________________________________________________________________________
+
 sort
+
+sorts the elements of an array in place (not putting the values into an outside data structures to avoid taking extra space)
+and returns the sorted array 
+the sort is ascending and is made from converting the elements into strings and comparing their UTF-16 code unit values 
+
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// expected output: Array [1, 100000, 21, 30, 4]
+
+
+can be given a comparator function to evaluate differently 
+let stringArray = ['Blue', 'Humpback', 'Beluga'];
+let numericStringArray = ['80', '9', '700'];
+let numberArray = [40, 1, 5, 200];
+let mixedNumericArray = ['80', '9', '700', 40, 1, 5, 200];
+
+function compareNumbers(a, b) {
+  return a - b;
+}
+
+stringArray.join(); // 'Blue,Humpback,Beluga'
+stringArray.sort(); // ['Beluga', 'Blue', 'Humpback']
+
+numberArray.join(); // '40,1,5,200'
+numberArray.sort(); // [1, 200, 40, 5]
+numberArray.sort(compareNumbers); // [1, 5, 40, 200]
+
+numericStringArray.join(); // '80,9,700'
+numericStringArray.sort(); // [700, 80, 9]
+numericStringArray.sort(compareNumbers); // [9, 80, 700]
+
+mixedNumericArray.join(); // '80,9,700,40,1,5,200'
+mixedNumericArray.sort(); // [1, 200, 40, 5, 700, 80, 9]
+mixedNumericArray.sort(compareNumbers); // [1, 5, 9, 40, 80, 200, 700]
+
+
+______________________________________________________________________________________________________________________
+
 slice
+returns a shallow copy of a portion of an array selected from start to end (end not included)
+
+syntax 
+slice(start, end)
+
+start - the first index to start at 
+end - the last index but does not include this one 
+
+returns a new array containing the extracted elements 
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// expected output: Array ["camel", "duck"]
+______________________________________________________________________________________________________________________
+
 pop
+
+pop()
+
+removes and returns the last element of the array 
+changes the length of the array
+returns undefined if the array is empty 
+
+const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+console.log(plants.pop());
+// expected output: "tomato"
+
+console.log(plants);
+// expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+plants.pop();
+
+console.log(plants);
+// expected output: Array ["broccoli", "cauliflower", "cabbage"]
+______________________________________________________________________________________________________________________
+
 shift
+
+removes and returns the first element of an array 
+this changes the length of an array
+
+syntax 
+shift()
+
+const array1 = [1, 2, 3];
+
+const firstElement = array1.shift();
+
+console.log(array1);
+// expected output: Array [2, 3]
+
+console.log(firstElement);
+// expected output: 1
+______________________________________________________________________________________________________________________
+
 push
+
+adds one or more elements to the end of an array and returns the new length of the array 
+
+syntax
+push(element0, element1, ... , elementN)
+
+
+const animals = ['pigs', 'goats', 'sheep'];
+
+const count = animals.push('cows');
+console.log(count);
+// expected output: 4
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push('chickens', 'cats', 'dogs');
+console.log(animals);
+// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+______________________________________________________________________________________________________________________
+
 unshift
+
+adds one or more elements to the beginning of an array and returns the new length of the array 
+
+syntax 
+unshift(element0, element1, ... , elementN)
+
+const array1 = [1, 2, 3];
+
+console.log(array1.unshift(4, 5));
+// expected output: 5
+
+console.log(array1);
+// expected output: Array [4, 5, 1, 2, 3]
+
+______________________________________________________________________________________________________________________
+
 includes
+determines if an array includes a certain value among its entries 
+returns either true or false 
+
+syntax 
+includes(searchElement, fromIndex(optional))
+
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
+
+
+______________________________________________________________________________________________________________________
+
 indexOf
+
+syntax 
+indexOf(searchElement, fromIndex)
+
+returns the first index at which the searched value can be found 
+if it is not present it will return negative 1 
+
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// expected output: 1
+
+// start from index 2
+console.log(beasts.indexOf('bison', 2));
+// expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// expected output: -1
+______________________________________________________________________________________________________________________
+
 every
+
+returns true or false if an array passes a provided function 
+
+syntax 
+every((element, index, array) => { ... } )
+
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
+
+______________________________________________________________________________________________________________________
+
+reverse
+
+reverses an array in place 
+
+syntax 
+reverse()
+
+returns the reversed array
+
+const array1 = ['one', 'two', 'three'];
+console.log('array1:', array1);
+// expected output: "array1:" Array ["one", "two", "three"]
+
+const reversed = array1.reverse();
+console.log('reversed:', reversed);
+// expected output: "reversed:" Array ["three", "two", "one"]
+
+// Careful: reverse is destructive -- it changes the original array.
+console.log('array1:', array1);
+// expected output: "array1:" Array ["three", "two", "one"]
+
+
+
+___________________________________________________________
+
 
 Give a short description of what the method does, how it works, it's time complexity (if appropriate), and give three examples of it in action!
 
