@@ -266,12 +266,106 @@ console.log(str.slice(4, 19));
 
 return value is a new string , does not modify the original 
 ___________________________________________________________
+___________________________________________________________
 
 split
+syntax 
+
+
+split()
+split(separator)
+split(separator, limit)
+
+separator - the pattern that describes where each split should occur. \\ this can be either a simple string or even a regular expression 
+limit(optional)- can set a limit of how many items to include in the array and will do nothing with the remaining text once that limit is reached
+if the limit is not reached then the array might contain fewer entries, 
+if the limit is 0 then you get back an empty array [] 
+
+
+creates an array of substrings based on a pattern that is provided as the first param 
+searches for a pattern that is provided as the first argument 
+
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+const words = str.split(' ');
+console.log(words[3]);
+// expected output: "fox"
+
+const chars = str.split('');
+console.log(chars[8]);
+// expected output: "k"
+
+const strCopy = str.split();
+console.log(strCopy);
+// expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+
+___________________________________________________________
+___________________________________________________________
 substr
+syntax 
+substr(start)
+substr(start, length)
+
+returns a new string from the index of the first character specified and can optionally have a second param to indicate the number of characters to extract 
+can also use a negative index to start from the end (there is some weirdness with this regarding microsoft JS)
+const str = 'Mozilla';
+
+console.log(str.substr(1, 2));
+// expected output: "oz"
+
+console.log(str.substr(2));
+// expected output: "zilla"
+___________________________________________________________
+___________________________________________________________
 toLowerCase
+
+syntax
+toLowerCase()
+
+returns the value of the string converted into lower case , does NOT modify the original string 
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+console.log(sentence.toLowerCase());
+// expected output: "the quick brown fox jumps over the lazy dog."
+
+___________________________________________________________
+___________________________________________________________
 toUpperCase
+
+syntax 
+toUpperCase()
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+console.log(sentence.toUpperCase());
+// expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+
+___________________________________________________________
+___________________________________________________________
 trim
+
+syntax
+
+trim()
+
+removes white space from both ends of a string 
+
+returns a new string with the whitespace trimmed 
+you can also use 
+trimStart() or trimEnd() to trim just one side 
+
+const greeting = '   Hello world!   ';
+
+console.log(greeting);
+// expected output: "   Hello world!   ";
+
+console.log(greeting.trim());
+// expected output: "Hello world!";
+
+
+___________________________________________________________
 
 Give a short description of what the method does, how it works, it's time complexity (if appropriate), and give three examples of it in action!
 
