@@ -26,6 +26,7 @@ Behavioral Questions
 7. Give an example of an important project goal you reached and how you achieved it.
 8. Describe a situation in which you experienced difficulty in getting others to accept your ideas? What was your approach? How did this work? Were you able to successfully persuade someone to see things your way
 9. Tell me about a situation when you were responsible for project planning. Did everything go according to your plan? If not, then why and what kind of counteractions did you have to take?
+   I had planned out a project using react-native for a mobile application. I had found an API that provided the necessary information and I thought it would be a simple matter to make a good application to suggest drinks to patrons. It did not pan out as originally intended because I wasn't as familiar with state management in react-native as I had thought and passing the data between screens was a little difficult to get the hang of but we eventually persevered.
 10. Tell me about a situation when you made a mistake at work. What happened exactly and how did you deal with it? What steps did you take to improve the situation?
 11. Tell me about a time when you worked with someone who was not completing his or her share of the work. How did you handle the situation? Did you discuss your concern with your coworker? With your manager? If yes, how did your coworker respond to your concern? What was your manager's response?
 12. Describe a situation when you worked effectively under pressure. How did you feel when working under pressure? What was going on, and how did you get through it?
@@ -43,7 +44,11 @@ My name is Alejandro and when the pandemic hit I was laid off from my job as a c
 18. Tell me about your dream job? What do you really want to do with your career?
 19. Tell me a time when you failed.
 20. What do you read on a regular basis?
+    I have started reading a lot of non-fiction self improvement books. I have started reading Atomic Habits and How to Win Friends and Influence People
+
 21. What's some critical feedback you've gotten recently?
+    I need to learn to prioritize and time box features when they need to get done
+
 22. Do you have any questions?
 
 Technical Questions
