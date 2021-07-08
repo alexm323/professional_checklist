@@ -21,7 +21,13 @@ when to not use map:
 1. You are not using the returned array, use forEach() or for...of instead 
 2. youre not returning a value from the callback 
 
+const arr = [1,2,3]
+// takes a function and that function can have 3 params 
+// runs once for each item in the array 
 
+const newArr = arr.map( (element,index,arr) => {
+
+})
 ___________________________________________________________
 ___________________________________________________________
 reduce
@@ -608,6 +614,7 @@ const strCopy = str.split();
 console.log(strCopy);
 // expected output: Array ["The quick brown fox jumps over the lazy dog."]
 
+works on a string 
 
 ___________________________________________________________
 ___________________________________________________________
