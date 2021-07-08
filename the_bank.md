@@ -67,7 +67,10 @@ Why you would use a srcset attribute in an image tag? Explain the process the br
 Have you used different HTML templating languages before?
 CSS
 What is CSS selector specificity and how does it work?
+specificity tells you which selector is going to be applied
+the higher the specificity , the more that style is going to persevere
 What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+resetting is when you eliminate the default styling
 Describe floats and how they work.
 Describe z-index and how stacking context is formed.
 Describe BFC (Block Formatting Context) and how it works.
