@@ -193,7 +193,9 @@ What is EventEmitter in Node.js?
 CS Theory
 What is recursion and give an example using javascript?
 What are types?
+The primitive data types are the different base blocks of javascript like strings, numbers, undefined, etc. (there is six total)
 What are data structures?
+Different ways of holding data, things like arrays and objects
 What is an algorithm?
 What is scope / lexical scope in javascript?
 What is polymorphism?
